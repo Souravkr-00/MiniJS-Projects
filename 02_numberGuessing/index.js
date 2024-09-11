@@ -6,7 +6,7 @@ let resetBtn = document.querySelector("#resetBtn");
 
 let output = document.querySelector("#output");
 let prevTurns = document.querySelector("#prevTurns");
-
+let GuessArr = [];
 
 userNumber.addEventListener('change',(e)=>{
     guessedNumber = parseInt(userNumber.value);
@@ -28,7 +28,10 @@ submitBtn.addEventListener('click',()=>{
         }
         prev.innerHTML = guessedNumber;
         prev.style.margin = "0px 1rem"
-        prevTurns.appendChild(prev);
+        GuessArr.push(num);
+        // prevTurns.appendChild(prev);
+        prevTurns.innerHTML = `Previous Turns: ` + GuessArr.join(", ");
+        
         userNumber.value = "";
         guessedNumber = -1;
     }
@@ -39,4 +42,5 @@ resetBtn.addEventListener('click',()=>{
     prevTurns.innerHTML = "Previous Turns: ";
     output.innerHTML = "";
     userNumber.value = "";
+    GuessArr = [];
 })
