@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <style>
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+        .meme-box{
+            margin: auto;
+            width: 60%;
+            max-width: 25rem;
+            min-width: 20rem;
+            height: 30rem;
+            border: 1px solid black;
+            padding: 1.5rem;
+        }
+        img{
+            width: 100%;
+            height: 20rem;
+        }
+        button{
+            margin-top: 1rem;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>MEME GENERATOR</h1>
+        <div class="meme-box">
+            <h3 class="title">Title</h3>
+            <img src="" alt="">
+            <p>Author Name: <span class="author-name"></span></p>
+        </div>
+        <button>Generate Meme</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
