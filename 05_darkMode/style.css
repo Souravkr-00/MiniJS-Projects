@@ -1,0 +1,9 @@
+.container{
+    background-color: azure;
+    color: black;
+}
+
+.dark{
+    background-color: rgb(33, 33, 33);
+    color: antiquewhite;
+}
