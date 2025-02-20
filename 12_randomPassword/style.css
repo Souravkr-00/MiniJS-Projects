@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linen;
+}
+
+.container{
+    width: 50vw;
+    background: yellowgreen;
+    margin: 1rem auto;
+    height: 50vh;
+    
+    
+}
+.copy-icon{
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+.copy-icon img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+.password-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+#password{
+    background: white;
+    width: 80%;
+    height: 2rem;
+    padding-top:0.5rem;
+    padding-left: 0.5rem;
+    margin: 1rem;
+    align-items: center;  
+    border-radius: 5px;
+}
+
+#generate{
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    display: float;
+    float: right;
+    margin-right: 2rem;
+
+}

@@ -39,10 +39,6 @@ function toCamelCase(string){
     return camelArr.join('');
 }
 
-function toKababCase(string){
-    const splitString = string.split(" ");
-    return splitString.join('-');
-}
 function toSnakeCase(string){
     const splitString = string.split(" ");
     return splitString.join('_');

@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #222;
+}
+
+.todo-app{
+    width: 80%;
+    background: wheat;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border-radius: 1rem; */
+}
+.input-field{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-field input{
+    width: 60%;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+.input-field button{
+    width: 5rem;
+    height: 3rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    background: white;
+    margin-left: 1rem;
+}
+
+.todo-list{
+    width: 80%;
+    margin-top: 1rem;
+    background: white;
+    height: 80vh;
+    overflow-y: auto;
+    border-radius: 1rem;
+
+}
+
+#todos{
+    margin: 1rem;
+
+}
+#todos li{
+    list-style: none;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-todo{
+    background: red;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.done{
+    text-decoration: line-through;
+    color: #ccc;
+}
